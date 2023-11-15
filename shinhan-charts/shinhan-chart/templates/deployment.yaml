@@ -1,0 +1,23 @@
+# esthete-deployment-chart/templates/deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shinhan-cicd
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: shinhan-cicd
+  template:
+    metadata:
+      labels:
+        app: shinhan-cicd
+    spec:
+      containers:
+        - image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: IfNotPresent
+          name:  esthete-user-chart
+
+          ports:
+            - containerPort: {{ .Values.containerPort }}
