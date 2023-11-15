@@ -1,1 +1,1 @@
-# nks-gitops
+# esthete-config
