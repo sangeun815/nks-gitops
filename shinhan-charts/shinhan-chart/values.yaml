@@ -1,15 +1,15 @@
 
-# Default values for shinhan-chart.
+# Default values for shinhan-cicd-chart.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-# shinhan-chart/values.yaml
+# esthete-deployment-chart/values.yaml
 
 replicaCount: 1
 
 image:
   repository: grace0857/shinhan-cicd
-  tag: 1.1
+  tag: 1.5
 
 containerPort: 8080
 
