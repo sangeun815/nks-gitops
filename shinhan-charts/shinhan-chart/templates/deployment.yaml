@@ -4,7 +4,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: shinhan-cicd
-  namespace: default
+  namespace: shinhan
 spec:
   selector:
     matchLabels:
